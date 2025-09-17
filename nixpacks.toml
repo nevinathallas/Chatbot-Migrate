@@ -1,11 +1,25 @@
 [phases.setup]
 nixPkgs = [
-  "php82",
-  "php82Extensions.pdo_mysql",
-  "php82Extensions.mysqli",
-  "php82Extensions.mbstring",
-  "php82Extensions.zip",
-  "php82Extensions.intl",
-  "php82Extensions.opcache",
-  "php82Extensions.bcmath"
+  "php80",
+  "php80Extensions.pdo_mysql",
+  "php80Extensions.mysqli",
+  "php80Extensions.mbstring",
+  "php80Extensions.zip",
+  "php80Extensions.intl",
+  "php80Extensions.opcache",
+  "php80Extensions.bcmath",
+  "php80Extensions.curl",
+  "php80Extensions.xml",
+  "php80Extensions.gd"
 ]
+
+[phases.build]
+cmds = [
+    "composer install --no-dev --optimize-autoloader",
+    "php artisan config:cache",
+    "php artisan route:cache", 
+    "php artisan view:cache"
+]
+
+[phases.start]
+cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
