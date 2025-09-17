@@ -12,6 +12,19 @@ nixPkgs = [
   "php82Extensions.xml",
   "php82Extensions.gd"
 ]
+nixPkgs = [
+  "php81",
+  "php81Extensions.pdo_mysql",
+  "php81Extensions.mysqli",
+  "php81Extensions.mbstring",
+  "php81Extensions.zip",
+  "php81Extensions.intl",
+  "php81Extensions.opcache",
+  "php81Extensions.bcmath",
+  "php81Extensions.curl",
+  "php81Extensions.xml",
+  "php81Extensions.gd"
+]
 
 [phases.build]
 cmds = [
