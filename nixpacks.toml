@@ -1,16 +1,29 @@
 [phases.setup]
 nixPkgs = [
-  "php80",
-  "php80Extensions.pdo_mysql",
-  "php80Extensions.mysqli",
-  "php80Extensions.mbstring",
-  "php80Extensions.zip",
-  "php80Extensions.intl",
-  "php80Extensions.opcache",
-  "php80Extensions.bcmath",
-  "php80Extensions.curl",
-  "php80Extensions.xml",
-  "php80Extensions.gd"
+  "php82",
+  "php82Extensions.pdo_mysql",
+  "php82Extensions.mysqli",
+  "php82Extensions.mbstring",
+  "php82Extensions.zip",
+  "php82Extensions.intl",
+  "php82Extensions.opcache",
+  "php82Extensions.bcmath",
+  "php82Extensions.curl",
+  "php82Extensions.xml",
+  "php82Extensions.gd"
+]
+nixPkgs = [
+  "php81",
+  "php81Extensions.pdo_mysql",
+  "php81Extensions.mysqli",
+  "php81Extensions.mbstring",
+  "php81Extensions.zip",
+  "php81Extensions.intl",
+  "php81Extensions.opcache",
+  "php81Extensions.bcmath",
+  "php81Extensions.curl",
+  "php81Extensions.xml",
+  "php81Extensions.gd"
 ]
 
 [phases.build]
